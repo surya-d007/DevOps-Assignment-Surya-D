@@ -26,5 +26,7 @@ private.tfvars
 .DS_Store
 Thumbs.db
 
+
 .github/workflows/deploy_ec2.yml
+
 .github/workflows/docker_push.yml
