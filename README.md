@@ -13,7 +13,19 @@ This guide provides detailed instructions for setting up infrastructure using Te
 
 ---
 
-## AWS Configuration
+# For CI/CD pipeline that deploys an EC2 instance using Terraform and pushes a Docker image to Amazon ECR using GitHub Actions.
+
+If you are doing this in your github repo make sure you declare secrets for your repo which consist of
+
+```
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+AWS_DEFAULT_REGION
+TF_VAR_KEY_NAME
+ECR_REPOSITORY
+```
+
+## AWS Configuration for local
 
 ### Step 1: Configure AWS CLI
 
@@ -29,20 +41,6 @@ This will ask for:
 AWS Access Key ID
 AWS Secret Access Key
 Default region name (e.g., ap-south-1 for Mumbai)
-```
-
-Alternatively, you can set environment variables for AWS credentials:
-
-# For CI/CD pipeline that deploys an EC2 instance using Terraform and pushes a Docker image to Amazon ECR using GitHub Actions.
-
-If you are doing this in your github repo make sure you declare secrets for your repo which consist of
-
-```
-AWS_ACCESS_KEY_ID
-AWS_SECRET_ACCESS_KEY
-AWS_DEFAULT_REGION
-TF_VAR_KEY_NAME
-ECR_REPOSITORY
 ```
 
 ## Terraform Setup in your local Machine
