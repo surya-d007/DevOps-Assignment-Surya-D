@@ -42,7 +42,7 @@ TF_VAR_KEY_NAME
 ECR_REPOSITORY
 ```
 
-Terraform Setup
+Terraform Setup in your local Machine
 
 ### Step 1: Initialize Terraform
 
