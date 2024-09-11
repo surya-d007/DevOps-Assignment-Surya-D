@@ -1,0 +1,11 @@
+# Terraform
+.terraform/
+# Local .terraform directories
+.terraform/
+.terraform/*
+# IDE and editor directories and files
+.vscode/
+# Operating system files
+.DS_Store
+Thumbs.db
+
