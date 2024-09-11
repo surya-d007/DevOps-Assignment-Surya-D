@@ -43,21 +43,21 @@ ECR_REPOSITORY
 ```
 
 Terraform Setup
-Step 1: Initialize Terraform
+#Step 1: Initialize Terraform
 Run the following command to initialize your working directory, which downloads the provider plugins:
 
 ```
 terraform init
 ```
 
-Step 2: Plan the Infrastructure
+#Step 2: Plan the Infrastructure
 Generate and review the execution plan to preview which resources will be created:
 
 ```
 terraform plan -var="key_name=your-key-pair"
 ```
 
-Step 3: Apply the Terraform Plan
+#Step 3: Apply the Terraform Plan
 Apply the Terraform configuration to provision AWS resources:
 
 ```
@@ -66,12 +66,9 @@ terraform apply -var="key_name=your-key-pair"
 
 Replace "your-key-pair" with the name of your existing EC2 key pair.
 
-Step 4: Destroy Resources (Optional)
+#Step 4: Destroy Resources (Optional)
 To clean up all resources created by Terraform and avoid charges, run:
 
-bash
-terraform destroy -var="key_name=your-key-pair"
-
 ```
-
+terraform destroy -var="key_name=your-key-pair"
 ```
