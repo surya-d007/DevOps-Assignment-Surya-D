@@ -1,4 +1,4 @@
-# Terraform Setup, Dockerization, and AWS ECR Push Guide
+# Terraform Setup - VPC , Subnet , RouteTable , IGW , EC2 , Dockerization, and AWS ECR Push docker
 
 ## Overview
 
@@ -32,6 +32,9 @@ Default region name (e.g., ap-south-1 for Mumbai)
 ```
 
 Alternatively, you can set environment variables for AWS credentials:
+
+# For CI/CD pipeline that deploys an EC2 instance using Terraform and pushes a Docker image to Amazon ECR using GitHub Actions.
+
 If you are doing this in your github repo make sure you declare secrets for your repo which consist of
 
 ```
@@ -76,4 +79,11 @@ To clean up all resources created by Terraform and avoid charges, run:
 
 ```
 terraform destroy -var="key_name=your-key-pair"
+```
+
+### Step 5: Build Docker locally
+
+```
+docker build -t flask-app .
+
 ```
