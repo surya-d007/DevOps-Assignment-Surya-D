@@ -10,3 +10,5 @@
 .DS_Store
 Thumbs.db
 
+.github/workflows/deploy_ec2.yml
+
