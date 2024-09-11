@@ -6,6 +6,7 @@
 # IDE and editor directories and files
 .vscode/
 # Operating system files
+
 .DS_Store
 Thumbs.db
 
