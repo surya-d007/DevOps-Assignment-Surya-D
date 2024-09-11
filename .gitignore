@@ -1,17 +1,29 @@
-# Terraform
-.terraform/
 # Local .terraform directories
-.terraform/
-.terraform/*
-# IDE and editor directories and files
-.vscode/
-# Operating system files
+**/.terraform/*
 
+# Exclude the .terraform.lock.hcl file from version control
+.terraform.lock.hcl
+
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignore override files as they are usually only needed for local development
+*.tfvars
+*.tfvars.json
+
+# Ignore sensitive variable files
+secret.tfvars
+private.tfvars
+
+# Exclude plan output files
+*.tfplan
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# OS specific files
 .DS_Store
 Thumbs.db
 
 .github/workflows/deploy_ec2.yml
-
-
-
-
